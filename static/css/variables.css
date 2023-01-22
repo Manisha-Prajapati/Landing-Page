@@ -1,0 +1,95 @@
+/* Import */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  /* Fonts */
+  --sans-serif: "Roboto", sans-serif;
+  --sans-serif-alt: "Roboto Condensed", sans-serif;
+
+  /* Colors */
+  --primary: #46ddb0;
+  --secondary: #007aff;
+  --ternary: rgb(143, 134, 134);
+  --dark: #3c3c3c;
+  --dark-alt: #333333;
+  --light: #fffff;
+  --light-alt: #f8f9fb;
+  --hover: rgb(47, 160, 135);
+}
+
+/* Default */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--sans-serif);
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+span,
+p,
+b,
+i,
+u,
+a {
+  text-decoration: none;
+  list-style: none;
+}
+
+.section {
+  padding: 100px 0;
+}
+
+p {
+  color: var(--ternary);
+  line-height: 28px;
+}
+
+/* small {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--primary);
+} */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--sans-serif-alt);
+  font-weight: bold;
+}
+
+.subhead {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--primary);
+}
+
+.button {
+  display: inline-block;
+  background-color: var(--primary);
+  border-radius: 35px;
+  border: none;
+  transition: all 2s ease;
+}
+
+.button:hover {
+  background-color: var(--hover);
+  border-radius: 35px;
+}
